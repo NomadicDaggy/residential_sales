@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+sudo -u postgres psql
 
-Things you may want to cover:
+create role residential_sales with createdb login password 'residential_sales';
 
-* Ruby version
+bundle install
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+bundle exec rake db:create db:migrate
