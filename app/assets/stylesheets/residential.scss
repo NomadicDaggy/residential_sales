@@ -2,11 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.arc text {
+body.arc text {
   font: 10px sans-serif;
   text-anchor: middle;
 }
 
 .arc path {
   stroke: #fff;
+}
+
+g.arc {
+	&:hover{
+		opacity: .55;
+	}
 }
